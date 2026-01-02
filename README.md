@@ -238,7 +238,7 @@ Projeto desenvolvido com foco em **modelagem de dados**, **bancos de dados relac
 ### 📬 Contato:
 
 - 📧 Email: [f.daniel.m@gmail.com](mailto:f.daniel.m@gmail.com)  
-- 💼 LinkedIn: [www.linkedin.com/in/daniel-martins-franca](https://www.linkedin.com/in/danixdev)  
+- 💼 LinkedIn: [www.linkedin.com/in/danixdev](https://www.linkedin.com/in/danixdev)  
 - 📁 Trabalhos: [wwww.danixdev.blogspot.com/2026/01/projeto-de-banco-de-dados-para.html](https://danixdev.blogspot.com/2026/01/projeto-de-banco-de-dados-para.html)
 
 
