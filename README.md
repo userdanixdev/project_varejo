@@ -1,6 +1,6 @@
 # 🛒 Projeto SmartRetail
 
-```O **Projeto SmartRetail** tem como objetivo aplicar os **fundamentos de projeto e modelagem de bancos de dados**, partindo da **abstração do mundo real** até a implementação prática das diferentes camadas de modelagem: **MER (Modelo Entidade-Relacionamento)**, **DER (Diagrama Entidade-Relacionamento)** e **ORM (Object-Relational Mapping)**. ```
+O **Projeto SmartRetail** tem como objetivo aplicar os **fundamentos de projeto e modelagem de bancos de dados**, partindo da **abstração do mundo real** até a implementação prática das diferentes camadas de modelagem: **MER (Modelo Entidade-Relacionamento)**, **DER (Diagrama Entidade-Relacionamento)** e **ORM (Object-Relational Mapping)**. 
 
 O projeto foi desenvolvido para **solucionar problemas reais de uma empresa do setor varejista**, abordando de forma estruturada o levantamento de requisitos, a organização das informações e a transformação do modelo conceitual em um banco de dados relacional integrado à linguagem de programação **Python**, por meio do framework **SQLAlchemy**.
 
