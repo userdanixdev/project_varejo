@@ -1,0 +1,40 @@
+dbml simplicada:
+
+
+fornecedores {
+	id_fornecedores integer pk >* produtos.id_fornecedores
+	_cnpj char(14)
+	_contato varchar
+	_nome_fantasia varchar
+	_email varchar'
+}
+
+produtos {
+	id_produtos integer pk >* itens_pedido.id_produtos
+	_nome varchar
+	_preco decimal(10,2)
+	id_fornecedores integer *> fornecedores.id_fornecedores
+	_quantidade_estoque integer
+}
+
+clientes {
+	id_clientes integer pk
+	_cpf char(11)
+	_nome varchar
+	_email varchar
+	_telefone varchar
+}
+
+pedidos {
+	id_pedidos integer pk >* itens_pedido.id_pedidos
+	data_pedido timestamp
+	id_clientes integer > clientes.id_clientes
+	valor_total decimal(10,2)
+}
+
+itens_pedido {
+	quantidade integer
+	id_pedidos integer > pedidos.id_pedidos
+	id_produtos integer > produtos.id_produtos
+	preco_venda decimal(10,2)
+}

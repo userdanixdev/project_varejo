@@ -1,0 +1,5 @@
+# 2° -> Criar a Base do ORM:
+
+from sqlalchemy.orm import declarative_base
+
+Base = declarative_base()

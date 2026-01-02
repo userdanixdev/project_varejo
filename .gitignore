@@ -1,0 +1,17 @@
+## Se der erro de política de execução do ambiente virtual no powershell do Windows:
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\venv\Scripts\Activate.ps1
+
+# Ambiente virtual
+venv/
+amb_virtual_varejo/
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Variáveis de ambiente
+.env
+
+# Banco de dados DuckDB (arquivo local)
+*.duckdb

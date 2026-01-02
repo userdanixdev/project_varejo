@@ -1,0 +1,46 @@
+// Tabela de Fornecedores
+Table fornecedores {
+  id_fornecedor integer [pk, increment]
+  cnpj char(14) [unique, note: 'Garante que não haja CNPJ duplicado']
+  nome_fantasia varchar
+  contato varchar
+  email varchar
+}
+
+// Tabela de Produtos (Regra: 1 fornecedor por produto)
+Table produtos {
+  id_produto integer [pk, increment]
+  nome varchar
+  preco_base decimal [note: 'Preço de venda atual']
+  estoque_atual integer
+  id_fornecedor integer [ref: > fornecedores.id_fornecedor]
+}
+
+// Tabela de Clientes
+Table clientes {
+  id_cliente integer [pk, increment]
+  cpf char(11) [unique]
+  nome varchar
+  email varchar
+  telefone varchar
+}
+
+// Tabela de Pedidos (Cabeçalho da venda)
+Table pedidos {
+  id_pedido integer [pk, increment]
+  id_cliente integer [ref: > clientes.id_cliente]
+  data_pedido timestamp [default: `now()`]
+  valor_total decimal
+}
+
+// Tabela de Itens do Pedido (A tabela que une Pedido e Produto)
+Table itens_pedido {
+  id_pedido integer [ref: > pedidos.id_pedido]
+  id_produto integer [ref: > produtos.id_produto]
+  quantidade integer
+  preco_praticado decimal [note: 'Preço no momento da venda']
+  
+  Indexes {
+    (id_pedido, id_produto) [pk] // Chave primária composta
+  }
+}
