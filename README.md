@@ -37,20 +37,20 @@ Cada fornecedor pode fornecer múltiplos produtos, mas um produto só pode ter u
 
 ## Projeto SmartRetail:
 **MER - Modelo Entidade-Relacionamento padrão:**
-
+```
 Fornecedor (CNPJ, nome_fantasia, contato, email)
 Produto (nome, preço, quantidade_estoque)
 Cliente (CPF, nome, email, telefone)
 Pedido (data_pedido, valor_total)
 Item_Pedido (quantidade, preço_venda_momento)
-
+```
 **Relacionamentos:**
-
+```
 Fornecedor fornece Produto (1:N)
 Cliente realiza Pedido (1:N)
 Pedido possui Item_Pedido (1:N)
 Produto compõe Item_Pedido (1:N)
-
+```
 ## Documentação do Modelo de Dados (DER):
 
 Especificação do Diagrama Entidade-Relacionamento para o sistema de gestão de vendas e fornecedores. O esquema foi projetado para garantir a integridade dos dados e a rastreabilidade total dos produtos.
@@ -239,7 +239,7 @@ Projeto desenvolvido com foco em **modelagem de dados**, **bancos de dados relac
 
 - 📧 Email: [f.daniel.m@gmail.com](mailto:f.daniel.m@gmail.com)  
 - 💼 LinkedIn: [www.linkedin.com/in/daniel-martins-franca](https://www.linkedin.com/in/danixdev)  
-- 📁 Trabalhos: [www.danixdev.blogspot.com/2025/12/estudo-de-caso-livraria-paginas-letras.html]https://danixdev.blogspot.com/2025/12/estudo-de-caso-livraria-paginas-letras.html
+- 📁 Trabalhos: [www.danixdev.blogspot.com/2025/12/estudo-de-caso-livraria-paginas-letras.html](https://danixdev.blogspot.com/2025/12/estudo-de-caso-livraria-paginas-letras.html)
 
 **Execução:**
 
