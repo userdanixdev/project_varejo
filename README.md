@@ -226,6 +226,7 @@ O projeto foi desenvolvido de forma modular, permitindo futuras expansões e mel
 - Criação de **relatórios gerenciais** e dashboards analíticos  
 - Evolução para um ambiente **OLAP/BI**, com rotinas **ETL**  
 - Implementação de **testes automatizados** para validação das regras de negócio  
+- Migração de dados com **Alembic**
 
 Essas evoluções tornam o sistema mais **robusto**, **escalável** e **aderente a cenários reais de mercado**.
 
